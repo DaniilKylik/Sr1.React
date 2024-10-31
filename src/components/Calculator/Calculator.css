@@ -1,0 +1,94 @@
+.calculator {
+  max-width: 300px !important;
+  margin: 20px auto !important;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #333333 !important; /* Темний фон */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #FFFFFF !important;
+  background-color: #4d4d4d !important;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: right;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input {
+  font-size: 1.4rem !important;
+  font-weight: bold;
+  color: #FFFFFF !important;
+}
+
+.result {
+  font-size: 1rem !important;
+  color: #CCCCCC !important;
+}
+
+.buttonCol {
+  padding: 3px !important;
+}
+
+.button {
+  width: 49% !important;
+  padding: 15px !important; /* Менший padding */
+  font-size: 1rem !important;
+  border-radius: 15px !important;
+  border: none !important;
+  transition: transform 0.1s ease-in-out;
+  flex: 1 1 49% !important;
+  max-width: 49% !important;
+}
+
+.button:active {
+  transform: scale(0.95) !important;
+}
+
+/* Кнопки з числами */
+.button-number {
+  background-color: #4d4d4d !important; /* Сірий для чисел */
+  color: #ffffff !important;
+}
+
+/* Кнопки з операторами */
+.button-operator {
+  background-color: #ff9500 !important; /* Помаранчевий */
+  color: #ffffff !important;
+}
+
+/* Кнопка "Очистити" */
+.button-clear {
+  background-color: #666666 !important; /* Темно-сірий */
+  color: #ffffff !important;
+  width: 49%; /* Ширина половини рядка */
+  flex: 1 1 49% !important;
+}
+
+/* Кнопка "=" */
+.button-equals {
+  background-color: #ff9500 !important; /* Помаранчевий */
+  color: #ffffff !important;
+  width: 49%; /* Ширина половини рядка */
+  flex: 1 1 49% !important;
+}
+
+.buttonGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Відступ між кнопками */
+  width: 100% !important;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  margin-bottom: 8px;
+}
